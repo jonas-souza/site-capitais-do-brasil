@@ -11,6 +11,8 @@
     --font-base: 'Raleway';
 }
 
+/* ********** GLOBAL EDIT ********** */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -19,12 +21,37 @@
 body {
     font-family: var(--font-base);
     background-color: #cececd;
-    min-width: 400px;
-    max-width: 1100px;
 }
 
+/* ********** HEADER EDIT ********** */
 header {
     background-color: #ffffff;
+    max-height: 50px;
+}
+
+.container {
+     display: flex;
+     /* Propriedade do display: flex; (editado usando o DevTools-Google Chrome*/
+     flex-direction: row;
+     flex-wrap: nowrap;
+     align-content: stretch;
+     justify-content: normal;
+     align-items: center;
+     /*Fim das propriedades do display: flex;*/
+     max-width: 1000px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.link a:first-child {
+    margin-left: 0;
 }
 
 .header-bottom {
@@ -36,23 +63,27 @@ header {
 
 .mod-title01 {
     font-weight: 800;
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 40px;
     padding: 15pt;
     text-shadow: 1px 2px 7px black;
 }
 
 .mod-parag01 {
-    font-size: 14pt;
+    font-size: 12pt;
     text-shadow: 1px 2px 7px black;
 }
-
+/* ********** MAIN EDIT ********** */
 main {
+    min-width: 300px;
+    max-width: 1000px;
     background-color: white;
-    width: 800px;
     margin: auto;
     margin-top: -80px;
+    box-shadow: 1px 1px px black;
 }
 
+/* ********** FOOTER EDIT ********** */
 footer {
     background-color: #002fff;
     height: 150px;
