@@ -105,8 +105,9 @@ article p {
     margin: 15px;
   }
 
-  article h2 {
-    padding: 5px;
+  article, h2, h3, h4, h5, h6 {
+    text-align: justify;
+    padding: 10px;
     margin: 5px;
   }
 
@@ -118,6 +119,10 @@ article p {
 
   main, a {
     text-decoration: none;
+  }
+
+  .roters {
+    font-size: 7pt;
   }
 
 /* ********** FOOTER EDIT ********** */
