@@ -7,8 +7,20 @@
     <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <style>
-      .regioes {
+
+      /* **** CAIXAS - REGIÕES **** */
+
+      .regions h3 {
+        background-color: blue;
+        color: #fff;
+      }
+
+      .regions {
         text-align: center;
+      }
+
+      .regions ul, li, a {
+        padding: 5px;
       }
 
       ul {
@@ -24,15 +36,24 @@
         width: 300px;
       }
 
-      .regioes ul, li, a {
-        padding: 5px;
-      }
-
       ul > li > a:hover {
         background-color: blue;
         color: #fff;
         border-radius: 10px;
         padding: 3px;
+      }
+
+      .obs {
+        text-align: justify;
+        line-height: 1.7em;
+        padding: 5px;
+        margin: 15px;
+      }
+
+      .emphasis {
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
       }
     </style>
   </head>
@@ -106,7 +127,7 @@
             </p>
           </section>
         </article>
-        <section class="regioes">
+        <section class="regions">
           <section class="reg-norte">
             <h3>Região Norte</h3>
             <ul>
@@ -159,8 +180,14 @@
               <li><a href="pages/21-porto-alegre.html">Porto Alegre - RS</a></li>
             </ul>
           </section>
-          <p>Observação: parte deste conteúdo foi extraída com a ajuda do site <a href="https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm" target="_blank" rel="external">Mundo Educação</a> do UOL e outra parte, com a ajuda da IA <em>ChatGPT</em>.</p>
-          <p>Conteúdo extraído para fins didáticos.</p>
+          <section class="obs">
+            <p>
+              Observação: parte deste conteúdo foi extraída com a ajuda do site <a href="https://mundoeducacao.uol.com.br/geografia/estados-brasil.htm" target="_blank" rel="external">Mundo Educação</a> do UOL e outra parte, com a ajuda da IA <em>ChatGPT</em>.
+            </p>
+          </section>
+          <p class="emphasis">
+            Conteúdo extraído para fins didáticos.
+          </p>
         </section>
     </main>
     <footer>
