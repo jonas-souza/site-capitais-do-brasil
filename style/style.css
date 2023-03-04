@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
 
 :root {
-    --color001: #1F57DB;
-    --color002: #1692F2;
-    --color003: #15C3E8;
-    --color004: #002fff;
+    --color001: #00d9f6;
+    --color002: #15C3E8;
+    --color003: #167df2;
+    --color004: #1F57DB;
+    --color005: #002fff;
 
-    --font-base: 'Raleway';
+    --base-font: 'Raleway';
 }
 
 /* ********** GLOBAL EDIT ********** */
@@ -19,84 +20,39 @@
 }
 
 body {
-    font-family: var(--font-base);
+    font-family: var(--base-font);
     background-color: #cececd;
 }
 
-/* ********** HEADER EDIT ********** */
+/* ********** HEADER/NAV EDIT ********** */
 header {
     background-color: #ffffff;
     max-height: 50px;
 }
 
-.container {
-     display: flex;
-     /* Propriedade do display: flex; (editado usando o DevTools-Google Chrome*/
-     flex-direction: row;
-     flex-wrap: nowrap;
-     align-content: stretch;
-     justify-content: normal;
-     align-items: center;
-     /*Fim das propriedades do display: flex;*/
-     max-width: 1000px;
+nav {
+    background-color: var(--color001);
+    padding: 3px;
 }
 
-.logo img {
-    height: 50px;
-}
-
-.links a {
-    text-decoration: none;
-    margin-left: 30px;
-}
-
-.link a:first-child {
-    margin-left: 0;
-}
-
-/* ********** AREA DE LOGIN E REGISTRO ********** */
-
-.user-form {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-.user-form__btn {
-    padding: 10px;
+nav > a {
+    color: var(--color005);
+    padding: 3px;
     border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
     text-decoration: none;
-}
-  
-.user-form__btn--login {
-    background-color: #2196F3;
-    margin-right: 10px;
-}
-  
-.user-form__btn--register {
-    background-color: #4CAF50;
+    font-weight: bold;
+    transition-duration: 0.5s;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav > a:hover {
+    background-color: var(--color005);
+    color: red;
 }
 
-.links a {
-    margin-right: 20px;
-}
-
-.user-form a {
-    margin-left: 15px;
-}
-  
-
-/* **** DEMAIS FORMATAÇÕES DO HEADER **** */
+/* **** ABAIXO DO HEADER **** */
 
 .header-bottom {
-    background-image: linear-gradient(to right, var(--color004), var(--color003), var(--color004));
+    background-image: linear-gradient(to right, var(--color005), var(--color002), var(--color005));
     color: white;
     height: 250px;
     text-align: center;
@@ -118,16 +74,47 @@ header {
 main {
     min-width: 300px;
     max-width: 1000px;
-    background-color: white;
+    padding: 20px;
     margin: auto;
+    margin-bottom: 10px;
     margin-top: -80px;
-    box-shadow: 1px 1px px black;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 7px black;
+}
+
+main a {
+    font-weight: bold;
+    color: var(--color005);
+}
+
+main a:hover {
+    color: red;
 }
 
 /* ********** FOOTER EDIT ********** */
 footer {
     background-color: #002fff;
     color: white;
-    height: 150px;
-    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    height: 130px;
+    padding: 10px;
+}
+
+.links-footer > a {
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links-footer > a:hover {
+    color: #ff0000;
+}
+
+.social-logo > a > img {
+    padding: 5px;
+    margin: 5px;
 }
