@@ -54,6 +54,47 @@ header {
     margin-left: 0;
 }
 
+/* ********** AREA DE LOGIN E REGISTRO ********** */
+
+.user-form {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+.user-form__btn {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.user-form__btn--login {
+    background-color: #2196F3;
+    margin-right: 10px;
+}
+  
+.user-form__btn--register {
+    background-color: #4CAF50;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    margin-right: 20px;
+}
+
+.user-form a {
+    margin-left: 15px;
+}
+  
+
+/* **** DEMAIS FORMATAÇÕES DO HEADER **** */
+
 .header-bottom {
     background-image: linear-gradient(to right, var(--color004), var(--color003), var(--color004));
     color: white;
@@ -86,6 +127,7 @@ main {
 /* ********** FOOTER EDIT ********** */
 footer {
     background-color: #002fff;
+    color: white;
     height: 150px;
     margin-top: 15px;
 }
