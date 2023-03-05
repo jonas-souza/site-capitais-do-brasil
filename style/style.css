@@ -1,3 +1,4 @@
+/* ********** GLOBAL EDIT ********** */
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
@@ -11,8 +12,6 @@
 
     --base-font: 'Raleway';
 }
-
-/* ********** GLOBAL EDIT ********** */
 
 * {
     padding: 0px;
@@ -65,12 +64,12 @@ nav > a:hover {
     color: #ffffff;
     font-size: 40px;
     line-height: 1.6em;
-    padding: 15pt;
+    padding: 5pt;
     text-shadow: 1px 2px 7px black;
 }
 
 .mod-parag01 {
-    font-size: 12pt;
+    font-size: 10pt;
     text-shadow: 1px 2px 7px black;
 }
 /* ********** MAIN EDIT ********** */
@@ -97,24 +96,23 @@ main a:hover {
 }
 
 /* ****** ARTICLE EDIT ****** */
+article, h2, h3, h4, h5, h6 {
+    text-align: justify;
+    padding: 5px;
+    margin: 5px;
+}
 
 article p {
     text-align: justify;
     line-height: 1.7em;
     padding: 5px;
-    margin: 15px;
-  }
-
-  article, h2, h3, h4, h5, h6 {
-    text-align: justify;
-    padding: 15px;
     margin: 5px;
   }
 
   .map-est-cap {
     text-align: center;
-    padding: 15px;
-    margin: 15px;
+    padding: -5px;
+    margin: -5px;
   }
 
   main, a {
