@@ -97,9 +97,6 @@ main a:hover {
 }
 
 /* ****** ARTICLE EDIT ****** */
-article > h2, h3, h4, h5, h6 {
-    text-align: justify;
-}
 
 article p {
     text-align: justify;
@@ -111,13 +108,14 @@ article p {
     margin-bottom: 10px;
 }
 
-
+figcaption {
+    font-size: 8pt;
+    padding-top: 30px;
+}
 
 .map-est-cap {
     text-align: center;
     padding: -5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin: -5px;
 }
 
