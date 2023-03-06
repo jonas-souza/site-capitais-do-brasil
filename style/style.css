@@ -125,7 +125,17 @@ figcaption {
     margin-bottom: 10px;
 }
 
-/* ********** FOOTER EDIT ********** */
+.list-city {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list-city > ol > li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ********* FOOTER EDIT ********* */
 footer {
     background-color: #002fff;
     color: white;
